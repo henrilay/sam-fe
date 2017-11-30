@@ -1,5 +1,5 @@
 <template>
-<table class="ui inverted red selectable celled table">
+  <table class="ui inverted red selectable celled table">
     <thead>
       <tr>
         <th class="left aligned">NOT AVAILABLE</th>

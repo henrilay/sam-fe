@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="spaced">
     <total-count v-bind:count="totalAvailable"></total-count>
     <availability
       v-for="space in allSpaces"
@@ -36,7 +36,15 @@
     },
     methods: {
       getLatest () {
-        axios.get('http://sam-be/events/read/latest').then(res => {
+        let config = {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+            'Access-Control-Allow-Methods': 'GET'
+          }
+        }
+
+        axios.get('http://localhost:9001/sam-be/events/read/latest').then(res => {
           this.allSpaces = res.data
         }).catch(err => {
           console.log(err)

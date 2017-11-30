@@ -3,17 +3,20 @@
     <div class="ui container">
       <img src="./assets/sam.png"/>
       <h1>SAM - Space Availability Monitor</h1>
+      <actions></actions>
       <space-list></space-list>
     </div>
   </div>
 </template>
 
 <script>
+import Actions from './components/Actions'
 import SpaceList from './components/SpaceList'
 
 export default {
   name: 'app',
   components: {
+    Actions,
     SpaceList
   }
 }
