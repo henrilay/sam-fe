@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <div class="ui container">
+      <img src="./assets/sam.png"/>
+      <h1>SAM - Space Availability Monitor</h1>
+      <space-list></space-list>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import SpaceList from './components/SpaceList'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    SpaceList
   }
 }
 </script>
