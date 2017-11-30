@@ -3,8 +3,10 @@
     <div class="ui container">
       <img src="./assets/sam.png"/>
       <h1>SAM - Space Availability Monitor</h1>
-      <actions></actions>
-      <space-list></space-list>
+      <actions class="ui segment"></actions>
+      <space-list class="ui segment"></space-list>
+      <h5>@Copyright Fighting Piledrivers</h5>
+      <h3>Thanks to DDCT Hackday 2017 to make this happens.</h3>
     </div>
   </div>
 </template>

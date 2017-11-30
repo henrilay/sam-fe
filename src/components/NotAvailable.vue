@@ -7,7 +7,7 @@
     </thead>
     <tbody>
       <tr v-for="space in spaces">
-        <td class="left aligned">{{space.id}} ({{space.reg}})</td>
+        <td class="left aligned">{{space.id}} (license plate: {{space.reg}})</td>
       </tr>
     </tbody>
   </table>
